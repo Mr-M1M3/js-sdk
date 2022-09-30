@@ -309,7 +309,7 @@ One way to integrate with SvelteKit SSR could be to create the PocketBase client
 and pass it to the other server-side actions using the `event.locals`.
 
 ```js
-// src/hooks.js
+// src/hooks.server.js
 import PocketBase from 'pocketbase';
 
 export async function handle({ event, resolve }) {
